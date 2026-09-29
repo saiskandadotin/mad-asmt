@@ -1,0 +1,2 @@
+id,api_base,path,auth_type
+1,"api.open-meteo.com","/v1/forecast",

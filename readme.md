@@ -21,12 +21,13 @@ optional if time permits:
 
 1. example api req - `https://api.open-meteo.com/v1/forecast?latitude=12.9719&longitude=77.5937&hourly=temperature_2m&current=temperature_2m&timezone=auto&forecast_days=3`
     - max `forecast_days` is 16
-    - only single location at a time via lat,long
+    - multi location is allowed via comma seperated lat,long inputs (no limit specified in the docs)
     - hourly and current are comma seperated list of weather vars
     - timezone - auto (but script/run env may not be configured correctly so check asia/kolkata)
     - out of scope for now but dbt should be able to handle additional fields?
         - as long as its just a new weather var, current setup should work
         - past forecasting etc not handled - see above docs
+    - no apparent failure points or pagination due to existing strict constraints, for now just model on above?
 
 
 ## deliverables

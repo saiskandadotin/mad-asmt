@@ -1,0 +1,5 @@
+id,source_api_id,parameter,value
+1,1,timezone,"Asia/Kolkata"
+2,1,forecast_days,2
+3,1,format,json
+4,1,timeformat,unixtime

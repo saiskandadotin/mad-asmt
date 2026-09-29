@@ -1,0 +1,2 @@
+id,param_ref_name,open_meteo_name,forecast_flag,current_flag
+1,"Temperature 2m above ground",temperature_2m,TRUE,TRUE
