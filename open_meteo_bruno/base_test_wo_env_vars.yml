@@ -1,0 +1,35 @@
+info:
+  name: base_test_wo_env_vars
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://api.open-meteo.com/v1/forecast?latitude=12.9719&longitude=77.5937&hourly=temperature_2m&current=temperature_2m&timezone=auto&forecast_days=2
+  params:
+    - name: latitude
+      value: "12.9719"
+      type: query
+    - name: longitude
+      value: "77.5937"
+      type: query
+    - name: hourly
+      value: temperature_2m
+      type: query
+    - name: current
+      value: temperature_2m
+      type: query
+    - name: timezone
+      value: auto
+      type: query
+    - name: forecast_days
+      value: "2"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
