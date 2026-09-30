@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_weather__payloads
+    columns:
+      - name: raw_id
+        tests: [unique, not_null]
+
+  - name: stg_weather__cities
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:  # <-- Wrap test arguments here
+            combination_of_columns: [raw_id, city_idx]
+    columns:
+      - name: location_id
+        tests: [not_null]
+      - name: current_temperature_c
+        tests: [not_null]

@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: weather
+    schema: "{{ target.schema }}_raw"
+    description: weather api metadata
+    tables:
+      - name: raw_weather_source_api
+        description: metadata - api base and path to call (cdc pending)
+      - name: raw_weather_source_api_params
+        description: metadata - fixed params to be included with evert call, unlikely to change? (cdc pending)
+      - name: raw_weather_locations
+        description: metadata - Location for which data is to be fetched with its vars (depending on how you "define" location - see boundingbox for example on meteo docs) (cdc pending)
+      - name: raw_weather_location_types
+        description: metadata - Reference for type of location - to help api calling code decide how to send params (cdc pending)
+      - name: raw_weather_params
+        description: metadata - open meteo name of the param and flags for current and forecast (cdc pending)
+      - name: py_raw_json
+        description: Raw JSON - Python API table with raw json
