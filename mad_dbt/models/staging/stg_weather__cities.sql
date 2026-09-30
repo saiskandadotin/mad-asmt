@@ -7,6 +7,8 @@
 --   j -> 0          array element by 0-based index
 --   jsonb_array_elements(arr) WITH ORDINALITY   one row per element + 1-based position
 
+-- should this be called cities_current? :/
+
 with payloads as (
 
     select *

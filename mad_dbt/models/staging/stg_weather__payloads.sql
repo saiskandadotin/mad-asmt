@@ -14,7 +14,7 @@ with src as (
         data_tm_from,
         data_tm_to,
         insert_ts as loaded_at
-    from {{ source('weather', 'py_raw_json') }}
+    from {{ source('weather_seeds', 'py_raw_json') }}
 
 ),
 

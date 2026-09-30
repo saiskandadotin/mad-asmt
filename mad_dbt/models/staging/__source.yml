@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: weather
+  - name: weather_seeds
     schema: "{{ target.schema }}_raw"
-    description: weather api metadata
+    description: weather api metadata (seeds)
     tables:
       - name: raw_weather_source_api
         description: metadata - api base and path to call (cdc pending)

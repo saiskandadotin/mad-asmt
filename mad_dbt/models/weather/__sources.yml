@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: weather_staging
+    schema: "{{ target.schema }}"
+    description: weather staging tables
+    tables:
+      - name: stg_weather__cities
+        description: individual city/location with current weather params
+      - name: stg_weather__locations_ref
+        description: metadata - to fetch location name, type, vars
+      - name: stg_weather__hourly
+        description: hour level predicted data - currently only has temperature_2m

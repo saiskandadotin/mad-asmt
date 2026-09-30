@@ -19,5 +19,5 @@ models:
     +static_analysis: strict
     staging:
       +materialized: table
-    marts:
+    weather:
       +materialized: table

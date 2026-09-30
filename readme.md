@@ -11,12 +11,11 @@
 optional if time permits:
 
 6. add data checks to dbt
-6. see how to maintain the metadata tables using dbt snapshots - then a model on top to actv_flag = 1
-7. setup a backfill mechanism in case of missed runs, errors etc
-8. hopefully i designed the tables to auto-account for new parameters like say humidity - see how easy/difficult it is to add/remove params - if not do it
-9. knowing you, you would have created a auto-refreshing mat view instead of proper pipeline, if yes - change it
+7. see how to maintain the metadata tables using dbt snapshots - then a model on top to actv_flag = 1
+8. setup a backfill mechanism in case of missed runs, errors etc
+9. hopefully i designed the tables to auto-account for new parameters like say humidity - see how easy/difficult it is to add/remove params - if not do it
 10. create a reproducible script that re-creates everything including superset and dashboards on hiring team machine (really stretching it here - dont do this)
-10. audit how difficult it would be to switch the data provider in the future - hopefully not a lot?
+11. audit how difficult it would be to switch the data provider in the future - hopefully not a lot?
 
 ## pre-build notes
 

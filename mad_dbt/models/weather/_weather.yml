@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: weather
+    columns:
+      - name: temperature_c
+        tests: [not_null]
