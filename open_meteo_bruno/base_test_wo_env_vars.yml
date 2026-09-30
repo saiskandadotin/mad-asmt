@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: https://api.open-meteo.com/v1/forecast?latitude=12.9719&longitude=77.5937&hourly=temperature_2m&current=temperature_2m&timezone=auto&forecast_days=2
+  url: https://api.open-meteo.com/v1/forecast?latitude=12.9719&longitude=77.5937&hourly=temperature_2m&current=temperature_2m&timezone=Asia/Kolkata&forecast_days=2
   params:
     - name: latitude
       value: "12.9719"
@@ -20,7 +20,7 @@ http:
       value: temperature_2m
       type: query
     - name: timezone
-      value: auto
+      value: Asia/Kolkata
       type: query
     - name: forecast_days
       value: "2"
